@@ -1,0 +1,48 @@
+name: briar-tsugu
+base: core22
+version: '0.6.3-beta' 
+summary: Secure messaging anywhere
+description: |
+  Censorship-resistant peer-to-peer messaging that bypasses centralized servers.
+  
+  Connect via Bluetooth, Wi-Fi or Tor, with privacy built-in.
+
+grade: stable 
+confinement: strict 
+
+lint:
+  ignore:
+    - classic
+    - library
+
+apps:
+  briar-tsugu:
+    command: opt/briar-desktop/bin/Briar
+    extensions: [gnome]
+    environment:
+     BRIAR_DATA_DIR: $SNAP_USER_DATA/.briar
+     _JAVA_OPTIONS: -Djava.util.prefs.userRoot=$SNAP_USER_DATA/.java/.userPrefs
+    plugs:
+      - desktop
+      - desktop-legacy
+      - wayland
+      - x11
+      - network
+      - network-bind
+      - home
+      - unity7
+      - gsettings
+      - audio-playback
+      - opengl
+      
+parts:
+   briar-tsugu:
+    source: https://desktop.briarproject.org/debs/jammy/${SNAPCRAFT_PROJECT_VERSION}/briar-desktop-ubuntu-22.04-${SNAPCRAFT_PROJECT_VERSION}.deb
+    plugin: dump
+    source-type: deb
+    stage-packages:
+      - libc6
+      - libexpat1
+      - libnotify4
+      - xdg-utils
+      - zlib1g
