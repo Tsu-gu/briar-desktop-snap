@@ -1,4 +1,4 @@
-The notifications and consequently the notification sound is broken.
+The notifications and consequently the notification sound is broken. I tried adding some extra stage packages but they had no effect so I removed them.
 
 The most notable part of the snap is:
 
