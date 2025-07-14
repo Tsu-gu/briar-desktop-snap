@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Briar
+Exec=briar-tsugu
+Icon=${SNAP}/meta/gui/briar-tsugu.png
+Comment=Briar messenger
+Terminal=false
+Type=Application
+MimeType=x-content/unix-software;
