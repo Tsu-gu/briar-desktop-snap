@@ -9,3 +9,5 @@ The most notable part of the snap is:
 ```
 
 Briar doesn't respect $HOME and uses its own variable. The _JAVA_OPTIONS is necessary for storing and reading user settings.
+
+I'm using core2**2** because the latest .deb file is for Ubuntu 22.04. I don't want to risk incompatibility.
