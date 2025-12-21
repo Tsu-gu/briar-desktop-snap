@@ -1,6 +1,6 @@
 name: briar-tsugu
 base: core22
-version: '0.6.4-beta' 
+version: '0.6.5-beta' 
 summary: Secure messaging anywhere
 description: |
   Censorship-resistant peer-to-peer messaging that bypasses centralized servers.
